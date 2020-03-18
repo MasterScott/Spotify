@@ -65,6 +65,7 @@ class Handler:
             if self.display_messages:
                 print(Fore.YELLOW + "All proxies are being used, waiting 10 seconds")
             time.sleep(10)
+        global retry
         if retry:
             cc = self.grab(self.proxy_type)
             if cc:
